@@ -1,23 +1,30 @@
-class Jihan{
+class jihan{
     public static void main (String[] args){
 
-        int money = Integer.parseInt(args[0]);
+
+        int coinNum = args.length;
+        int coinCek = 0 ;
+        int coinSum = 0 ;
 
 
-        if(money != 10 || money != 50 || money != 100 || money != 500 ){
-            System.out.println("警告：" + money + "円は硬貨として適切な値ではありません");
+        for(int  i = 0 ; i < coinNum ; i++) {
 
-        }else if(money == 1){
-            System.out.println("警告：1円玉は使えません") ;
-        }else if(money == 5){
-            System.out.println("警告：5円玉は使えません") ;
+        	coinCek = Integer.parseInt(args[i]) ; /*args[i]でコマンドライン引数を順に取得できる*/
 
+        	if(coinCek == 10 || coinCek == 50 || coinCek == 100 || coinCek == 500 ){
+
+        			coinSum = coinSum + coinCek ;
+
+        	}else if(coinCek == 1 || coinCek == 5){
+
+            		System.out.println("警告：" + coinCek + "円玉はつかえません");
+
+        	}else {
+        			System.out.println("警告：" + coinCek + "は硬貨として適切な値ではありません");
+        	}
+
+        	System.out.println("ただいまの投入金額は"+ coinSum + "円です") ;
         }
-
-       int totalMoney =  money ;
-
-        System.out.println("ただいまの投入金額は"+ totalMoney + money + "円です") ;
-
 
     }
 }
