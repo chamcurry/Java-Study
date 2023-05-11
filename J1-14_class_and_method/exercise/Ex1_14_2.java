@@ -56,8 +56,8 @@ public class Ex1_14_2 {
 			
 			//引数として受け取った値が5000より大きい場合、1000より大きく5000円以下の分について10％OFF、
 			//5000円より大きい分について20％値引きにする（小数点以下切り捨て）
-			priceDownTemp = (int)(   (DISCOUNT_BORDER2 - DISCOUNT_BORDER1) * DISCOUNT_RATE1 
-			                         + ( pr - DISCOUNT_BORDER2) * DISCOUNT_RATE2            ) ;
+			priceDownTemp = (int)( (DISCOUNT_BORDER2 - DISCOUNT_BORDER1) * DISCOUNT_RATE1 
+			                         + ( pr - DISCOUNT_BORDER2) * DISCOUNT_RATE2 ) ;
 			
 		}
 		
