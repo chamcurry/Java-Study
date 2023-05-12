@@ -33,6 +33,24 @@ class Ex1_15_2{
 		*/
 		
 		
+		final String REMOVE_CHAR_SAI = "歳" ;
+		final int BODAR_AGE = 4 ;
+		final String SEX_FEMALE = "メス" ;
+		
+		List<String> adultFemaleDogsList = new ArrayList<String>();
+		
+			for(int i = 0 ; i < dogs.length ; i++){
+			
+				if(Integer.parseInt( dogs[i][1].replase(REMOVE_CHAR_SAI , "") ) >= BODAR_AGE && dogs[i][2].equals(SEX_FEMALE) ){
+
+					adultFemaleDogsList.add(dogs[i][0]) ;
+				}
+
+			}
+
+			for(int i = 0 ; i < adultFemaleDogsList.size() ; i++){
+				System.out.println(adultFemaleDogsList.get(i)) ;
+			}
 	}
 }
 
