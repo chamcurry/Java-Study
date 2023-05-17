@@ -25,7 +25,7 @@ class Ex1_15_2{
 		
 		/*以下のプログラムを作成してください。
 		**  ①Sring型を扱うArrayList「adultFemaleDogsList」を作成する
-		**  ②2次元配列dogsから以下の条件にあてはまる名前を抽出し、すべてadultFemaleDogsListに格納する
+		**  ②2次元配列dogsから以下の条件にあてはまる※名前※を抽出し、すべてadultFemaleDogsListに格納する
 		**     - 4歳以上
 		**     - メス
 		**    ※ヒント：年齢の文字列から「歳」を除去する方法について調べてみよう！
